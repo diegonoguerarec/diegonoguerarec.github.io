@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 2px solid #e9ecef;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #6c757d;
+}
+
+.contact a {
+  color: #2c3e50;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  margin-bottom: 50px;
+  padding: 30px 25px;
+  background-color: #fafbfc;
+  border: 1px solid #e1e5e9;
+  border-radius: 8px;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+/* Section titles */
+section h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+section h3 {
+  color: #495057;
+  font-size: 1.2rem;
+  margin: 25px 0 15px 0;
+  font-weight: 500;
+}
+
+/* Listas */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 8px;
+  padding: 5px 0;
+  padding-left: 15px;
+  position: relative;
+}
+
+li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #6c757d;
+}
+
+
+#skills > div {
+  margin-bottom: 25px;
+}
+
+#skills ul {
+  columns: 2;
+  column-gap: 30px;
+}
+
+
+#education li {
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+
+#education li::before {
+  display: none;
+}
+
+#education b {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+    
+#languages li {
+  padding-left: 0;
+}
+
+#languages li::before {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 15px;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  section {
+    padding: 20px 0;
+  }
+  
+  #skills ul {
+    columns: 1;
+  }
+}
