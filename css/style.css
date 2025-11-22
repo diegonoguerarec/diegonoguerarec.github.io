@@ -43,6 +43,13 @@ header p {
   color: #6c757d;
 }
 
+.location {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #8e9297;
+  font-style: italic;
+}
+
 .contact a {
   color: #2c3e50;
   text-decoration: none;
