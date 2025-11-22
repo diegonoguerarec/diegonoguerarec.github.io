@@ -1,1 +1,165 @@
-Wello world
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diego Noguera Areco | Junior Software Developer</title>
+  <meta name="description" content="Portafolio y CV de Diego Noguera Areco – Junior Software Developer, estudiante de Ciencias Informáticas en la Facultad Politécnica UNA.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --clr-primary: #0055cc;
+      --clr-bg: #f4f6f8;
+      --clr-card: #ffffff;
+      --clr-text: #1e1e1e;
+      --radius: 10px;
+      --transition: 0.3s ease;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--clr-bg);
+      color: var(--clr-text);
+      line-height: 1.7;
+      margin: 0 auto;
+      max-width: 950px;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-weight: 700;
+      color: var(--clr-primary);
+      font-size: 2.3rem;
+    }
+    p.tagline {
+      font-weight: 600;
+      color: #333;
+      margin-top: 0.5rem;
+    }
+    a {
+      color: var(--clr-primary);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .contact {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    section {
+      background: var(--clr-card);
+      border-radius: var(--radius);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin: 1.5rem 0;
+      padding: 1.5rem 2rem;
+    }
+    section h2 {
+      border-bottom: 2px solid var(--clr-primary);
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding-bottom: 0.3rem;
+      font-weight: 700;
+    }
+    details summary {
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--clr-primary);
+      margin-bottom: 0.5rem;
+    }
+    details p img {
+      margin: 5px;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ccc;
+      color: #666;
+    }
+    #github-stats img {
+      margin: 10px;
+      border-radius: var(--radius);
+    }
+    #download {
+      background: var(--clr-primary);
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background var(--transition);
+    }
+    #download:hover { background: #003f99; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Diego Noguera Areco</h1>
+    <p class="tagline">Junior Software Developer · Computer Science Student · Tech Enthusiast</p>
+    <div class="contact">
+      <a href="mailto:diegonoguerarec@gmail.com">diegonoguerarec@gmail.com</a> ·
+      <a href="https://www.linkedin.com/in/diego-noguera-aa0b4b335" target="_blank">LinkedIn</a> ·
+      <a href="https://github.com/diegonoguerarec" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="languages">
+      <h2>Idiomas</h2>
+      <ul>
+        <li><p>Español — Nativo</p></li>
+        <li><p>Inglés — Intermedio / Avanzado</p></li>  
+    </ul>
+      
+      
+    </section>
+
+
+    <section id="skills">
+      <h2>Habilidades</h2>
+      <details open>
+        <summary>Lenguajes de Programación</summary>
+        <p>
+          Python · Java · C · PHP · JavaScript · HTML · CSS
+        </p>
+      </details>
+      <details open>
+        <summary>Frameworks & Herramientas</summary>
+        <p>Django · Bootstrap · Git · GitHub · Docker · Postman · Linux</p>
+      </details>
+      <details open>
+        <summary>Bases de Datos</summary>
+        <p>PostgreSQL · MySQL · DBeaver · phpMyAdmin</p>
+      </details>
+      <details open>
+        <summary>Testing & QA</summary>
+        <p>OWASP ZAP · JMeter · SonarQube · Corgea · Pytest</p>
+      </details>
+      <details open>
+        <summary>Productividad</summary>
+        <p>Microsoft Office · Google Workspace · LibreOffice · Jira</p>
+      </details>
+    </section>
+
+    <section id="education">
+      <h2>Educación</h2>
+      <ul>
+        <li><b>Facultad Politécnica – Universidad Nacional de Asunción</b><br>Ingeniería en Informática (Cursando 4° Año)</li>
+        <li><b>Colegio Técnico Nacional de la Capital</b><br>Técnico en Informática (2018–2020)</li>
+        <li><b>CCPA – Centro Cultural Paraguayo Americano</b><br>Estudios de Inglés (2019–2022)</li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>
