@@ -9,10 +9,14 @@
 </head>
 <body>
   <header>
+    <div class="lang-switch">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="es">ES</button>
+    </div>
     <img src="assets/profile.jpg" alt="Diego Noguera Areco" class="avatar">
     <h1>Diego Noguera Areco</h1>
-    <p>Junior Software Developer · Computer Science Student · Tech Enthusiast</p>
-    <p class="location">San Lorenzo - Paraguay</p>
+    <p data-i18n="header.role">Junior Software Developer · Computer Science Student · Tech Enthusiast</p>
+    <p class="location" data-i18n="header.location">San Lorenzo - Paraguay</p>
     <div class="contact">
       <a href="mailto:diegonoguerarec@gmail.com">diegonoguerarec@gmail.com</a> ·
       <a href="tel:+595971695114" target="_blank">+595 971 695114</a> ·
@@ -22,31 +26,31 @@
   </header>
 
   <section id="about_me">
-      <h2>About me</h2>
-      <p>
+      <h2 data-i18n="about.title">About me</h2>
+      <p data-i18n="about.p1">
         I am a Computer Science student at Facultad Politécnica – Universidad Nacional de Asunción, with a strong foundation in <strong>programming</strong>, <strong>databases</strong>, <strong>software testing</strong>, <strong>data analysis</strong>, and <strong>problem-solving</strong>.
         I am passionate about software development, continuous learning, and building efficient, scalable, and maintainable applications.
       </p>
-      <p>
+      <p data-i18n="about.p2">
         Currently, I am developing academic and personal projects using Python, Django, and Docker, while strengthening my skills in Software Testing and DevOps practices.
       </p>
     </section>
 
   <main>
     <section id="languages">
-      <h2>Languages</h2>
+      <h2 data-i18n="languages.title">Languages</h2>
       <ul>
-        <li>Spanish - Native proficiency</li>
-        <li>English - Full professional proficiency</li>  
+        <li data-i18n="languages.spanish">Spanish - Native proficiency</li>
+        <li data-i18n="languages.english">English - Full professional proficiency</li>  
       </ul>
     </section>
 
 
     <section id="skills">
-      <h2>Skills</h2>
+      <h2 data-i18n="skills.title">Skills</h2>
 
       <div>
-        <h3>Programming Languages</h3>
+        <h3 data-i18n="skills.programming">Programming Languages</h3>
         <ul>
           <li>Python</li>
           <li>Java</li>
@@ -59,7 +63,7 @@
       </div>
       
       <div>
-        <h3>Databases</h3>
+        <h3 data-i18n="skills.databases">Databases</h3>
         <ul>
           <li>PostgreSQL</li>
           <li>MySQL</li>
@@ -69,7 +73,7 @@
       </div>
 
       <div>
-        <h3>Tools and Frameworks</h3>
+        <h3 data-i18n="skills.tools">Tools and Frameworks</h3>
         <ul> 
           <li>Git</li>
           <li>GitHub</li> 
@@ -86,7 +90,7 @@
       </div>
 
       <div>
-        <h3>Other Skills</h3>
+        <h3 data-i18n="skills.other">Other Skills</h3>
         <ul>
           <li>Microsoft Office</li>
           <li>Google Workspace</li>
@@ -98,25 +102,25 @@
     </section>
 
     <section id="education">
-      <h2>Education</h2>
+      <h2 data-i18n="education.title">Education</h2>
       <ul>
         <li>
-          <b>Facultad Politécnica – Universidad Nacional de Asunción</b><br>
-          Computer Science Student (Currently in 5th Year)
+          <b data-i18n="education.b1">Facultad Politécnica – Universidad Nacional de Asunción</b><br>
+          <p data-i18n="education.p1">Computer Science Student (Currently in 5th Year)</p>
         </li>
         <li>
-          <b>Colegio Técnico Nacional de la Capital</b><br>
-          Computer Technician (2018–2020)
+          <b data-i18n="education.b2">Colegio Técnico Nacional de la Capital</b><br>
+          <p data-i18n="education.p2">Computer Technician (2018–2020)</p>
         </li>
         <li>
-          <b>CCPA – Centro Cultural Paraguayo Americano</b><br>
-          English Language Studies (2019–2022)
+          <b data-i18n="education.b3">CCPA – Centro Cultural Paraguayo Americano</b><br>
+          <p data-i18n="education.p3">English Language Studies (2019–2022)</p>
         </li>
       </ul>
     </section>
 
     <section id="certification">
-      <h2>Certifications</h2>
+      <h2 data-i18n="certifications.title">Certifications</h2>
       <ul>
         <li>
           <a href="https://www.freecodecamp.org/certification/diegao/relational-database-v8" target="_blank">Relational-Database-v8</a>
@@ -148,11 +152,13 @@
     </section>
 
     <div class="download-section">
-      <button onclick="window.print()" class="download-btn">
+      <button onclick="window.print()" class="download-btn" data-i18n="download.button">
         Download PDF
       </button>
     </div>
 
   </main>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
