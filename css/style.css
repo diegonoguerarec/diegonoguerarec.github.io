@@ -108,6 +108,53 @@ li::before {
   color: #6c757d;
 }
 
+.work-tech {
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+.work-tech-label {
+  font-weight: 600;
+}
+
+#portfolio li {
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+
+#portfolio li::before {
+  display: none;
+}
+
+.project-link {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-img {
+  width: 252px;
+  height: 158px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #e1e5e9;
+  flex-shrink: 0;
+  background-color: #ffffff;
+}
+
+.project-title {
+  color: #2c3e50;
+}
+
+.project-desc {
+  margin-top: 4px;
+  color: #6c757d;
+}
+
 
 #skills > div {
   margin-bottom: 25px;
